@@ -13,10 +13,37 @@
 <% if @time_slice_format %>
   time_slice_format <%= @time_slice_format %>
 <% end %>
+<% if @flush_interval %>
+  flush_interval <%= @flush_interval %>
+<% end %>
 <% if @buffer_type %>
   buffer_type <%= @buffer_type %>
 <% end %>
 <% if @buffer_path %>
   buffer_path <%= @buffer_path %>
+<% end %>
+<% if @buffer_chunk_limit %>
+  buffer_chunk_limit <%= @buffer_chunk_limit %>
+<% end %>
+<% if @utc %>
+  utc
+<% end %>
+<% if @aws_key_id %>
+  aws_key_id <%= @aws_key_id %>
+<% end %>
+<% if @aws_sec_key %>
+  aws_sec_key <%= @aws_sec_key %>
+<% end %>
+<% if @s3_bucket %>
+  s3_bucket <%= @s3_bucket %>
+<% end %>
+<% if @s3_endpoint %>
+  s3_endpoint <%= @s3_endpoint %>
+<% end %>
+<% if @store_as %>
+  store_as <%= @store_as %>
+<% end %>
+<% if @format_json %>
+  format_json
 <% end %>
 </match>

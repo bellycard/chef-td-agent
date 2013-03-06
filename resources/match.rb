@@ -12,5 +12,18 @@ attribute :type, :kind_of => String, :default => "file"
 attribute :path, :kind_of => String
 attribute :format, :kind_of => String
 attribute :time_slice_format, :kind_of => String
+attribute :flush_interval, :kind_of => String
 attribute :buffer_type, :kind_of => String
 attribute :buffer_path, :kind_of => String
+attribute :buffer_chunk_limit, :kind_of => String
+attribute :utc, :kind_of => [TrueClass, FalseClass], :default => false
+
+# S3 specific
+# TODO Move plugin specific attributes elsewhere
+attribute :aws_key_id, :kind_of => String
+attribute :aws_sec_key, :kind_of => String
+attribute :s3_bucket, :kind_of => String
+attribute :s3_endpoint, :kind_of => String
+attribute :store_as, :kind_of => String
+attribute :format_json, :kind_of => [TrueClass, FalseClass], :default => false
+
