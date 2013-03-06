@@ -53,7 +53,7 @@ end
 
 package "td-agent" do
   options "-f --force-yes"
-  action :upgrade
+  action :install
 end
 
 service "td-agent" do
