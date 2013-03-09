@@ -27,3 +27,9 @@ attribute :s3_endpoint, :kind_of => String
 attribute :store_as, :kind_of => String
 attribute :format_json, :kind_of => [TrueClass, FalseClass], :default => false
 
+# HDFS specific
+# TODO Move plugin specific attributes elsewhere
+attribute :hdfs_host, :kind_of => String
+attribute :hdfs_port, :kind_of => Fixnum
+attribute :hdfs_path, :kind_of => String
+attribute :hdfs_user, :kind_of => String

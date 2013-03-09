@@ -32,6 +32,10 @@ action :add do
             :s3_endpoint => new_resource.s3_endpoint,
             :store_as => new_resource.store_as,
             :format_json => new_resource.format_json,
+            :hdfs_host => new_resource.hdfs_host,
+            :hdfs_port => new_resource.hdfs_port,
+            :hdfs_path => new_resource.hdfs_path,
+            :hdfs_user => new_resource.hdfs_user
         })
         notifies :restart, "service[td-agent]"
         action :create
