@@ -33,3 +33,4 @@ attribute :hdfs_host, :kind_of => String
 attribute :hdfs_port, :kind_of => Fixnum
 attribute :hdfs_path, :kind_of => String
 attribute :hdfs_user, :kind_of => String
+attribute :httpfs, :kind_of => [TrueClass, FalseClass], :default => false

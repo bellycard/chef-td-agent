@@ -35,7 +35,8 @@ action :add do
             :hdfs_host => new_resource.hdfs_host,
             :hdfs_port => new_resource.hdfs_port,
             :hdfs_path => new_resource.hdfs_path,
-            :hdfs_user => new_resource.hdfs_user
+            :hdfs_user => new_resource.hdfs_user,
+            :httpfs => new_resource.httpfs
         })
         notifies :restart, "service[td-agent]"
         action :create
