@@ -4,6 +4,7 @@
 <match <%= @match %>>
   type copy
 
+<% if @s3_bucket %>
   <store>
     type <%= @type %>
   <% if @path %>
@@ -49,6 +50,7 @@
     format_json
   <% end %>
   </store>
+<% end %>
 
 <% if @hdfs_host %>
   <store>
