@@ -22,7 +22,7 @@
     buffer_type <%= @buffer_type %>
   <% end %>
   <% if @buffer_path %>
-    buffer_path <%= @buffer_path %>
+    buffer_path <%= @buffer_path %>s3/
   <% end %>
   <% if @buffer_chunk_limit %>
     buffer_chunk_limit <%= @buffer_chunk_limit %>
@@ -75,5 +75,12 @@
     output_include_time false
     output_include_tag false
   </store>
+<% end %>
+
+<% if @foward_host %>
+  <server>
+    host <%= @forward_host %>
+    port <%= @forward_port %>
+  </server>
 <% end %>
 </match>
