@@ -80,9 +80,12 @@
 <% end %>
 
 <% if @forward_host %>
-  <server>
-    host <%= @forward_host %>
-    port <%= @forward_port %>
-  </server>
+  <store>
+    type forward
+    <server>
+      host <%= @forward_host %>
+      port <%= @forward_port %>
+    </server>
+  </store>
 <% end %>
 </match>
